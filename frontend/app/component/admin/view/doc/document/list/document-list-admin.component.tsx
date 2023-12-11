@@ -182,6 +182,10 @@ const List = () => {
                                 <InputNumber id="4-1" value={criteria.anneeMin} onChange={(e) => setCriteria({ ...criteria, anneeMin: e.value })} mode="decimal" />
                             </div>
                             <div className="flex flex-column col-3">
+                                <label className="mb-1"  htmlFor="4-1">{t("document.anneeMin")}</label>
+                                <InputNumber id="4-1" value={criteria.anneeMin} onChange={(e) => setCriteria({ ...criteria, anneeMin: e.value })} mode="decimal" />
+                            </div>
+                            <div className="flex flex-column col-3">
                                 <label className="mb-1"  htmlFor="4-2">{t("document.anneeMax")}  </label>
                                 <InputNumber id="4-2" value={criteria.anneeMax} onChange={(e) => setCriteria({ ...criteria, anneeMax: e.value })} mode="decimal" />
                             </div>
