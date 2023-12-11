@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  ged-front:
+      build: ./frontend
+      container_name: ged-frentend
+      ports:
+        - '3000:80'
+      expose:
+        - '3000'
+  get-backend:
+      build: ./backend-ms1
+      container_name: get-backEnd
+      ports:
+        - '8036:8036'
+      expose:
+        - '8036'
