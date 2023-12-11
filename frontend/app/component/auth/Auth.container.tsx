@@ -62,6 +62,10 @@ const AuthContainer: React.FC = ({}) => {
                 </div>
                 <Button label="Se connecter" className="w-full p-3 text-large" onClick={handleAuthFormClick}></Button>
             </div>
+            <div>
+                <Button label="Se connecter" className="w-full p-3 text-large" onClick={handleAuthFormClick}></Button>
+
+            </div>
             <Toast ref={toast}/>
         </div>
     );
